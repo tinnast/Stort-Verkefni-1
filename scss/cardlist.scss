@@ -1,0 +1,28 @@
+.cardlist {
+  @media (min-width: $max-width / 2) {
+    .card--wide:hover {
+      background-color: #ddd;
+      transition: ease 500ms;
+    }
+  }
+  .cardlist__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -($gutter/2);
+    margin-bottom: $gutter;
+    margin-left: -($gutter/2);
+  }
+  .cardlist__col {
+    padding: $gutter / 2; }
+    @media (min-width: $max-width / 2) {
+      .cardlist__col {
+        width: $width / 2; } }
+
+  .cardlist .card {
+    height: 100%;
+    display: block; }
+
+  .cardlist .card__content {
+    align-items: center; }
+
+}
