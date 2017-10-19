@@ -3,40 +3,162 @@
   <head>
     <meta charset"utf-8">
     <meta="viewport" content="width=device-width, initial-scale=1">
-    <title>Forsíða</title>
+    <title>Fooþjónustan-Kaupa</title>
     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="styleguide.css">
-    <!-- <link rel="stylesheet" href="grid.css"> -->
+     <!--<link rel="stylesheet" href="grid.css">-->
     <link rel="stylesheet" href="styles.css">
-    <div class="nav">
-      <h3 class="heading heading--three">Fooþjónustan</h3>
-      <button class="button">Um</button>
-      <button class="button">Kaupa</button>
-    </div>
+
   </head>
   <body>
-    <header>
-
-    </header>
-    <div>
-      <h1 class="heading heading--one">Kaupa</h1>
-    </div>
-    <form>
-  <!-- Upplýsingar um greiðandann -->
-    </form>
-    <footer>
-      <div>
-        <p>Fooþjónustan</p>
-        <p>123-4567</p>
+      <header>
+        <div class="navbar">
+          <ul class="left">
+            <li class="main-logo">
+              <a href="index.html">
+              <h3 class="heading heading--three">Fooþjónustan</h3>
+            </a>
+            </li>
+          </ul>
+            <div class="nav-buttons">
+              <a href="um.html" class="button">Um</a>
+              <a href="kaupa.html" class="button">Kaupa</a>        
+        </div>
       </div>
-      <div>
-      <p>Opið 12-13 alla daga</p>
-      <p>Bargata 1</p>
-      <p>900 Foobar</p>
+      </header>
+
+      <div class="header__sb">
+        <div class="header-items__sb">
+          <h3 class="heading heading--one">Kaupa</h3>
+        </div>
+      </div>
+
+      <main>
+        <div class="row">
+        <div class="col col-6">
+
+            <div class="form">
+
+
+          <legend><h3>Persónuupplýsingar</h3></legend>
+            <div class="field">
+              <label for="nafn">Nafn:</label><br>
+              <input type="text" name="nafn" id="nafn" required>
+            </div>
+
+            <div class="field">
+              <label for="kennitala">Kennitala:</label><br>
+              <input type="text" name="kennitala" id="kennitala" placeholder="123456-7890" required>
+            </div>
+
+            <label for="kyn">Kyn</label><br>
+              <label><input name="kyn" type="radio" value="Kona" id="kyn">Kona</label><br>
+              <label><input name="kyn" type="radio" value="Karl" id="kyn">Karl</label><br>
+              <label><input name="kyn" type="radio" value="annað" id="kyn">Annað</label><br>
+
+              <div class="field">
+                <label for="ími">Sími:</label><br>
+                <input type="text" name="sími" id="sími" placeholder="+354 812 3456" required>
+              </div>
+
+              <div class="field">
+                <label for="heimilisfang">Heimilisfang:</label><br>
+                <input type="text" name="heimilisfang" id="heimilisfang" required>
+              </div>
+
+              <input type="checkbox" name="póstlisti" checked id="póstlisti">
+              <label for="póstlisti">Skrá mig á póstlista</label>
+</div>
+
     </div>
-    <div>
-      <p>(c) Fooþjónustan</p>
+
+
+
+        <div class="col col-6">
+            <div class="form">
+
+
+        <legend><h3>Greiðsluupplýsingar</h3></legend>
+        <label for="greiða">Greiða með:</label><br>
+          <select class="payment-method" name="greiða" id="greiða">
+            <option value="value1" selected>Kreditkort</option>
+            <option value="value2" >Reiðufé</option>
+            <option value="value3">Millifærsla</option>
+          </select>
+
+          <div class="field">
+            <label for="nafn">Nafn á korti:</label><br>
+            <input type="text" name="nafn" id="nafn" required>
+          </div>
+
+          <div class="field">
+            <label for="kortanumer">Kortanúmer:</label><br>
+            <input type="text" name="kortanumer" id="kortanumer" placeholder="5999-9999-9999-9999" required>
+          </div>
+
+
+                  <legend>Gildistími</legend>
+
+                  <label class="month" for="mán">Mán:</label>
+                    <select name="mán" id="mán">
+                      <option value="value1" selected>01</option>
+                      <option value="value2">02</option>
+                      <option value="value3">03</option>
+                      <option value="value4">04</option>
+                      <option value="value5">05</option>
+                      <option value="value6">06</option>
+                      <option value="value7">07</option>
+                      <option value="value8">08</option>
+                      <option value="value9">09</option>
+                      <option value="value10">10</option>
+                      <option value="value11">11</option>
+                      <option value="value12">12</option>
+                    </select>
+
+
+
+                    <label class="year" for="ár">Ár:</label>
+                      <select name="ár" id="ár">
+                        <option value="value1" selected>2017</option>
+                        <option value="value2">2018</option>
+                        <option value="value3">2019</option>
+                        <option value="value4">2020</option>
+                        <option value="value5">2021</option>
+                        <option value="value6">2022</option>
+                        <option value="value7">2023</option>
+                        <option value="value8">2024</option>
+                        <option value="value9">2025</option>
+                      </select>
+
+
+          </div>
+        </div>
+</div>
+
+
+      </main>
+      <div class="confirm-button">
+        <div class="button">Panta</div>
     </div>
-    </footer>
+
   </body>
+  <div class="footer">
+    <div class="row">
+    <div class="col col-6">
+      <p>Fooþjónustan</p>
+      <p>123-4567</p>
+    </div>
+
+    <div class="col col-6">
+    <p>Opið 12-13 alla daga</p>
+    <p>Bargata 1</p>
+    <p>900 Foobar</p>
+  </div>
+<div class="col col-12">
+  <div class="copyright">
+    © Fooþjónustan 2017
+  </div>
+</div>
+</div>
+  </div>
 </html>
