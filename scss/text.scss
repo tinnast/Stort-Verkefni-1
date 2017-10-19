@@ -1,4 +1,33 @@
-.text {
-  &__p {
-  }
+.text p {
+  padding-bottom: $gutter;
+}
+
+.information {
+  margin-top: 9em;
+}
+
+.profile-text p {
+  text-align: center;
+}
+
+.profile-text h3 {
+  text-align: center;
+}
+
+blockquote {
+  float: right;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: left;
+}
+
+blockquote p {
+  font-size: 1rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none; /* no underline */
 }
