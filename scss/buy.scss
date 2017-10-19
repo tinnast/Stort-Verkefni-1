@@ -1,0 +1,54 @@
+
+input[type=text] {
+  display: inline-block;
+  width: 75%;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+legend {
+  padding-bottom: $gutter;
+}
+
+select {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.year {
+  padding-left: $gutter;
+}
+
+.payment-method {
+  display: inline-block;
+  width: 75%;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  margin: 8px 0;  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.confirm-button {
+  padding-top: $gutter * 3;
+  padding-bottom: $gutter * 3;
+  text-align: center;
+}
+
+.buy-now {
+  padding-top: 2em;
+  padding-bottom: 8em;
+  text-align: center;
+}
+
+.buy-now a {
+  margin-top: 2em;
+}
