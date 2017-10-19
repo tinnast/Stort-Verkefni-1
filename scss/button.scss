@@ -1,27 +1,22 @@
 .button {
   display: inline-block;
-
-  margin: 0;
-  padding: 10px 5px;
-  border: 1px solid #666;
-  border-radius: 4px;
   width: 100%;
   max-width: 256px;
-
+  padding: 7px 5px;
+  margin: 3px;
+  margin-bottom: 3px;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-  color: #eee;
-  background-color: #666;
-
   font-family: Lato, helvetica, arial, sans-serif;
   font-size: 1rem;
-
-  text-decoration: none;
+  color: #eee;
   text-align: center;
-
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   cursor: pointer;
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 2px;
 
   &:hover {
     color: #eee;
@@ -40,8 +35,8 @@
 
   &--disabled,
   &--disabled:hover {
-    border-color: #eee;
     color: #999;
     background-color: #eee;
+    border-color: #eee;
   }
 }
