@@ -3,65 +3,116 @@
   <head>
     <meta charset"utf-8">
     <meta="viewport" content="width=device-width, initial-scale=1">
-    <title>Forsíða</title>
+    <title>Fooþjónustan-Forsíða</title>
     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="styleguide.css">
-    <!-- <link rel="stylesheet" href="grid.css"> -->
+     <!--<link rel="stylesheet" href="grid.css">-->
     <link rel="stylesheet" href="styles.css">
 
-    </head>
+  </head>
   <body>
-
     <header>
-        <div class="navbar">
-          <ul class="left">
-            <li class="main-logo">
-              <h3 class="heading heading--three">Fooþjónustan</h3>
-            </li>
-          </ul>
-            <div class="nav-buttons">
-              <button class="button">Um</button>
-              <button class="button">Kaupa</button>
-            </li>
-          </ul>
-        </div>
+      <div class="navbar">
+        <ul class="left">
+          <li class="main-logo">
+            <a href="index.html">
+            <h3 class="heading heading--three">Fooþjónustan</h3>
+            </a>
+          </li>
+        </ul>
+
+      <div class="nav-buttons">
+          <a href="um.html" class="button">Um</a>
+          <a href="kaupa.html" class="button">Kaupa</a>
+      </div>
+      </div>
     </header>
 
     <div class="header">
       <div class="header-items">
-        <h2 class="heading heading--two">Í fyrsta sinn á Íslandi</h2>
-        <h1 class="heading heading--one">Fooþjónustan</h1>
-        <button class="button">Kaupa</button>
+        <div class="fade-1">
+          <h2 class="heading heading--two">Í fyrsta sinn á Íslandi</h2>
+        </div>
+        <div class="fade-2">
+          <h1 class="heading heading--one">Fooþjónustan</h1>
+        </div>
+        <div class="fade-3">
+          <a href="kaupa.html" class="button">Kaupa</a>
+        </div>
       </div>
     </div>
-  </header>
+
     <main>
-      <div class="information">
-        <h3 class="heading heading--three">Ódýr og góð þjónusta</h3>
-          <p>Gerir nákvæmlega það sem þú býst við.  Ekki láta þessa frábæru nýjung fram hjá þér fara</p>
-        <h3 class="heading heading--three">Þægilegt í amstri dagsins</h3>
-          <p>Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.</p>
-        <h3 class="heading heading--three">Nauðsynlegt á hvert heimili</h3>
-          <p>Hvort sem er fyrir einstaklinga eða stórfjölskyldur</p>
+      <div class="row">
+        <div class="col col-6">
+          <div class="text">
+            <h3 class="heading--three"><img src="check.svg" alt="Checkmark" class="check-img">Ódýr og góð þjónusta</h3>
+              <p>Gerir nákvæmlega það sem þú býst við. Ekki láta þessa frábæru nýjung framhjá þér fara.</p>
+              <h3 class="heading--three"><img src="check.svg" alt="Checkmark" class="check-img">Þægilegt í amstri dagsins</h3>
+                <p>Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.</p>
+
+              <h3 class="heading--three"><img src="check.svg" alt="Checkmark" class="check-img">Nauðsynlegt á hvert heimili</h3>
+                <p>Hvort sem er fyrir einstaklinga eða stórfjölskyldur.</p>
+          </div>
+        </div>
+        <div class="col col-6">
+          <img src="image.jpg" alt="" class:"main-content-img">
+        </div>
       </div>
 
-      <div class="feature-img">
-        <img src="image.jpg" class="feature-img">
+      <div class="row">
+        <div class="profile col col-4">
+          <img src="profile1.jpg" alt="" class="profile-img">
+          <div class="profile-text">
+            <h3>„Ég get engan vegið hugsað mér lífið án þessarar þjónustu!“</h3>
+              <p>	Anna Jóns </p>
+              <p> Áskrifandi í þrjá mánuði </p>
+          </div>
+        </div>
+
+        <div class="profile col col-4">
+          <img src="profile2.jpg" alt="" class="profile-img">
+          <div class="profile-text">
+            <h3>„Vá, þetta breytir öllu!“</h3>
+              <p>	Siggi Páls </p>
+              <p> Áskrifandi í tvo daga </p>
+          </div>
+        </div>
+
+        <div class="profile col col-4">
+          <img src="profile3.jpg" alt="" class="profile-img">
+          <div class="profile-text">
+            <h3> „A+++, mun aldrei hætta í áskrift“</h3>
+              <p>	Jón Guðrúnarson </p>
+              <p> Áskrifandi í ár </p>
+          </div>
+        </div>
       </div>
 
+      <div class="buy-now">
+        <h3>Eftir hverju ert þú að bíða?</h3>
+          <a href="kaupa.html" class="button">Kaupa</a>
+        </div>
     </main>
-    <footer>
-      <div>
+
+    <div class="footer">
+      <div class="row">
+      <div class="col col-6">
         <p>Fooþjónustan</p>
         <p>123-4567</p>
       </div>
 
-      <div>
-      <p>Opið 12-13 alla daga</p>
-      <p>Bargata 1</p>
-      <p>900 Foobar</p>
+      <div class="col col-6">
+        <p>Opið 12-13 alla daga</p>
+        <p>Bargata 1</p>
+        <p>900 Foobar</p>
+      </div>
+      <div class="col col-12">
+        <div class="copyright">
+          <p>© Fooþjónustan 2017</p>
+        </div>
+      </div>
+      </div>
     </div>
-
-    </footer>
   </body>
 </html>
