@@ -1,11 +1,15 @@
 .heading {
 
   width: 100%;
-  padding: 0;
-  border: none;
-
+  //padding-top: 1em;
+  //border: none;
   font-family: Merriweather, georgia, serif;
   font-size: 2rem;
+
+  &__um {
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+  }
 
   &--one {
     font-size: 3rem;
@@ -18,5 +22,9 @@
 
   &--three {
     font-size: 1rem;
+
+    &__um {
+      font-size: 2.5rem;
+    }
   }
 }
