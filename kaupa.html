@@ -22,7 +22,7 @@
           </ul>
             <div class="nav-buttons">
               <a href="um.html" class="button">Um</a>
-              <a href="kaupa.html" class="button">Kaupa</a>        
+              <a href="kaupa.html" class="button">Kaupa</a>
         </div>
       </div>
       </header>
@@ -35,67 +35,58 @@
 
       <main>
         <div class="row">
-        <div class="col col-6">
-
+          <div class="col col-6">
             <div class="form">
+              <legend><h3>Persónuupplýsingar</h3></legend>
+                <div class="field">
+                  <label for="nafn">Nafn:</label><br>
+                  <input type="text" name="nafn" id="nafn" required>
+                </div>
 
+                <div class="field">
+                  <label for="kennitala">Kennitala:</label><br>
+                  <input type="text" name="kennitala" id="kennitala" placeholder="123456-7890" required>
+                </div>
 
-          <legend><h3>Persónuupplýsingar</h3></legend>
+                <label for="kyn">Kyn</label><br>
+                  <label><input name="kyn" type="radio" value="Kona" id="kyn">Kona</label><br>
+                  <label><input name="kyn" type="radio" value="Karl" id="kyn">Karl</label><br>
+                  <label><input name="kyn" type="radio" value="annað" id="kyn">Annað</label><br>
+
+                <div class="field">
+                  <label for="ími">Sími:</label><br>
+                  <input type="text" name="sími" id="sími" placeholder="+354 812 3456" required>
+                </div>
+
+                <div class="field">
+                  <label for="heimilisfang">Heimilisfang:</label><br>
+                  <input type="text" name="heimilisfang" id="heimilisfang" required>
+                </div>
+
+                <input type="checkbox" name="póstlisti" checked id="póstlisti">
+                <label for="póstlisti">Skrá mig á póstlista</label>
+            </div>
+          </div>
+
+          <div class="col col-6">
+            <div class="form">
+              <legend><h3>Greiðsluupplýsingar</h3></legend>
+                <label for="greiða">Greiða með:</label><br>
+                <select class="payment-method" name="greiða" id="greiða">
+                  <option value="value1" selected>Kreditkort</option>
+                  <option value="value2" >Reiðufé</option>
+                  <option value="value3">Millifærsla</option>
+                </select>
+
             <div class="field">
-              <label for="nafn">Nafn:</label><br>
+              <label for="nafn">Nafn á korti:</label><br>
               <input type="text" name="nafn" id="nafn" required>
             </div>
 
             <div class="field">
-              <label for="kennitala">Kennitala:</label><br>
-              <input type="text" name="kennitala" id="kennitala" placeholder="123456-7890" required>
+              <label for="kortanumer">Kortanúmer:</label><br>
+              <input type="text" name="kortanumer" id="kortanumer" placeholder="5999-9999-9999-9999" required>
             </div>
-
-            <label for="kyn">Kyn</label><br>
-              <label><input name="kyn" type="radio" value="Kona" id="kyn">Kona</label><br>
-              <label><input name="kyn" type="radio" value="Karl" id="kyn">Karl</label><br>
-              <label><input name="kyn" type="radio" value="annað" id="kyn">Annað</label><br>
-
-              <div class="field">
-                <label for="ími">Sími:</label><br>
-                <input type="text" name="sími" id="sími" placeholder="+354 812 3456" required>
-              </div>
-
-              <div class="field">
-                <label for="heimilisfang">Heimilisfang:</label><br>
-                <input type="text" name="heimilisfang" id="heimilisfang" required>
-              </div>
-
-              <input type="checkbox" name="póstlisti" checked id="póstlisti">
-              <label for="póstlisti">Skrá mig á póstlista</label>
-</div>
-
-    </div>
-
-
-
-        <div class="col col-6">
-            <div class="form">
-
-
-        <legend><h3>Greiðsluupplýsingar</h3></legend>
-        <label for="greiða">Greiða með:</label><br>
-          <select class="payment-method" name="greiða" id="greiða">
-            <option value="value1" selected>Kreditkort</option>
-            <option value="value2" >Reiðufé</option>
-            <option value="value3">Millifærsla</option>
-          </select>
-
-          <div class="field">
-            <label for="nafn">Nafn á korti:</label><br>
-            <input type="text" name="nafn" id="nafn" required>
-          </div>
-
-          <div class="field">
-            <label for="kortanumer">Kortanúmer:</label><br>
-            <input type="text" name="kortanumer" id="kortanumer" placeholder="5999-9999-9999-9999" required>
-          </div>
-
 
                   <legend>Gildistími</legend>
 
@@ -115,8 +106,6 @@
                       <option value="value12">12</option>
                     </select>
 
-
-
                     <label class="year" for="ár">Ár:</label>
                       <select name="ár" id="ár">
                         <option value="value1" selected>2017</option>
@@ -129,36 +118,35 @@
                         <option value="value8">2024</option>
                         <option value="value9">2025</option>
                       </select>
-
-
-          </div>
-        </div>
-</div>
+                    </div>
+                  </div>
+                </div>
 
 
       </main>
       <div class="confirm-button">
         <div class="button">Panta</div>
-    </div>
+      </div>
 
-  </body>
-  <div class="footer">
-    <div class="row">
-    <div class="col col-6">
-      <p>Fooþjónustan</p>
-      <p>123-4567</p>
-    </div>
 
-    <div class="col col-6">
-    <p>Opið 12-13 alla daga</p>
-    <p>Bargata 1</p>
-    <p>900 Foobar</p>
-  </div>
-<div class="col col-12">
-  <div class="copyright">
-    © Fooþjónustan 2017
-  </div>
-</div>
-</div>
-  </div>
+      <div class="footer">
+        <div class="row">
+          <div class="col col-6">
+            <p>Fooþjónustan</p>
+            <p>123-4567</p>
+          </div>
+
+          <div class="col col-6">
+            <p>Opið 12-13 alla daga</p>
+            <p>Bargata 1</p>
+            <p>900 Foobar</p>
+          </div>
+          <div class="col col-12">
+            <div class="copyright">
+              <p>© Fooþjónustan 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
 </html>
